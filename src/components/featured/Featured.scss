@@ -35,6 +35,9 @@
                     display: flex;
                     gap: 10px;
                     align-items: center;
+                    width: 100%;
+                    height: 100%;
+
 
                     img {
                         width: 20px;
@@ -46,6 +49,15 @@
                         border: none;
                         outline: none;
                         color: black;
+                        width: 100%;
+                        height: 100%;
+                        padding: 17px 0px;
+
+                    }
+
+                    .removeImg {
+                        display: none;
+                        cursor: pointer;
                     }
 
                 }

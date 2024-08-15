@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Featured.scss";
 
 const Featured = () => {
+  const [input, setInput] = useState("");
+  const handleInputChange = (e) => {
+    setInput(e.target.value);
+  };
+  const handleRemoveInput = () => {
+    setInput("");
+  };
   return (
     <div className="featured">
       <div className="container">
@@ -12,7 +19,20 @@ const Featured = () => {
           <div className="search">
             <div className="searchInput">
               <img src="./img/search.png" alt="searchicon" />
-              <input type="text" placeholder='Try "building mobil app"' />
+              <input
+                onChange={(e) => handleInputChange(e)}
+                value={input}
+                type="text"
+                placeholder='Try "building mobil app"'
+              />
+              {input && (
+                <img
+                  src="./img/remove.png"
+                  className="removeImg"
+                  onClick={handleRemoveInput}
+                  alt="remove icon"
+                />
+              )}
             </div>
             <button>Search</button>
           </div>
