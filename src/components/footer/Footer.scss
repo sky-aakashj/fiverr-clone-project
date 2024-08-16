@@ -1,0 +1,48 @@
+.footer {
+    display: flex;
+    justify-content: center;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 1400px;
+        gap: 30px;
+
+
+        .top {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-bottom: 2px solid gray;
+            padding-bottom: 30px;
+
+            .item {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                span {}
+
+            }
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+
+            .left {
+                display: flex;
+                gap: 20px;
+
+            }
+
+            .right {
+                display: flex;
+                gap: 20px;
+
+
+
+            }
+        }
+    }
+}
