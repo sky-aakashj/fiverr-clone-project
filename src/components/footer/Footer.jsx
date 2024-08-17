@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.scss";
 
-const Footer = () => {
+function Footer() {
   return (
     <div className="footer">
       <div className="container">
@@ -65,10 +65,11 @@ const Footer = () => {
             <span>Working Not Working</span>
           </div>
         </div>
+        <hr />
         <div className="bottom">
           <div className="left">
             <h2>fiverr</h2>
-            <span className="copyright">© Fiver International Ltd. 2024</span>
+            <span>© Fiverr International Ltd. 2023</span>
           </div>
           <div className="right">
             <div className="social">
@@ -92,6 +93,6 @@ const Footer = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Footer;
