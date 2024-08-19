@@ -10,6 +10,7 @@ const GigCard = ({ item }) => {
         <div className="info">
           <div className="user">
             <img src={item.pp} alt="" />
+
             <span>{item.username}</span>
           </div>
           <p>{item.desc}</p>
