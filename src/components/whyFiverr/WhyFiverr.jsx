@@ -4,7 +4,7 @@ import "./WhyFiverr.scss";
 
 const WhyFiverr = () => {
   return (
-    <div className="featured">
+    <div className="whyFiverr">
       <div className="container">
         <div className="item">
           <h1>A whole world of freelance talent at your fingertips</h1>
