@@ -1,6 +1,6 @@
 import React from "react";
-import "./GigCard.scss";
 import { Link } from "react-router-dom";
+import "./GigCard.scss";
 
 const GigCard = ({ item }) => {
   return (
@@ -10,7 +10,6 @@ const GigCard = ({ item }) => {
         <div className="info">
           <div className="user">
             <img src={item.pp} alt="" />
-
             <span>{item.username}</span>
           </div>
           <p>{item.desc}</p>
